@@ -16,6 +16,7 @@ public class BulletTrigger : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
+            EnemyCounter.Instance.RegisterFrag();
         }
     }
 }
