@@ -31,7 +31,7 @@ public class HorizontalMovement : MonoBehaviour
         //Поворачиваем объект по направлению движения
         _rootTransform.forward = _movement.normalized;
 
-        var translate = Vector3.forward * _speed * Time.deltaTime;
+        var translate = Vector3.forward * (_speed * Time.deltaTime);
         
         _rootTransform.Translate(translate);
         
