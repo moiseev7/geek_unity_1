@@ -19,6 +19,9 @@ public class VectorDotAndCrossDemo : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(Vector3.zero, Vector3.Cross(_p1.position,_p2.position));
         
+        Gizmos.color = Color.gray;
+        Gizmos.DrawLine(Vector3.zero, Vector3.Cross(_p2.position,_p1.position));
+        
         Gizmos.color = Color.white;
         
         Gizmos.DrawLine(Vector3.zero, Vector3.right * Vector3.Dot(_p1.position,_p2.position));
