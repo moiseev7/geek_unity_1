@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 1986807752}
   - component: {fileID: 1986807751}
   m_Layer: 0
-  m_Name: VectorMagnitude
+  m_Name: Script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
