@@ -20,5 +20,11 @@ public class MathfPartOne : MonoBehaviour
         Debug.Log($"Модуль числа {_negativeFloat} это {Mathf.Abs(_negativeFloat)}");
         Debug.Log($"Синус угла {_degAngle} градусов равен {Mathf.Sin(Mathf.Deg2Rad * _degAngle)}");
         Debug.Log($"{_base} в степени {_exp} равно {Mathf.Pow(_base,_exp)}");
+        var value = 1.0f;
+        var a = Mathf.Sin(Mathf.Deg2Rad * 30);
+        var b = Mathf.Cos(Mathf.Deg2Rad*60);
+        var result = a/b;
+        Debug.Log($"{a}/{b} равно {value}: {value == a/b}");
+        Debug.Log($"{a}/{b} примерно равно {value}: {Mathf.Approximately(value,result)}");
     }
 }
