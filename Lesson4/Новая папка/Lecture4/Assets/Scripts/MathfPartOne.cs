@@ -21,10 +21,11 @@ public class MathfPartOne : MonoBehaviour
         Debug.Log($"Синус угла {_degAngle} градусов равен {Mathf.Sin(Mathf.Deg2Rad * _degAngle)}");
         Debug.Log($"{_base} в степени {_exp} равно {Mathf.Pow(_base,_exp)}");
         var value = 1.0f;
-        var a = Mathf.Sin(Mathf.Deg2Rad * 30);
-        var b = Mathf.Cos(Mathf.Deg2Rad*60);
-        var result = a/b;
-        Debug.Log($"{a}/{b} равно {value}: {value == a/b}");
+        var a = Mathf.Sin(Mathf.Deg2Rad * 30);//==0.5
+        var b = Mathf.Cos(Mathf.Deg2Rad*60); // 0.5
+        var result = a/b; // ~0.5/~0.5 
+        
+        Debug.Log($"{a}/{b} равно {value}: {value == a/b}  Result: {result}");
         Debug.Log($"{a}/{b} примерно равно {value}: {Mathf.Approximately(value,result)}");
     }
 }

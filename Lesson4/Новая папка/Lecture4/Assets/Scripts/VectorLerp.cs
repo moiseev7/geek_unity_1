@@ -12,6 +12,6 @@ public class VectorLerp : MonoBehaviour
     {
         var max = _max.position;
         var min = _min.position;
-        _target.transform.position = Vector3.Lerp(min,max,+_lerp);
+        _target.transform.position = Vector3.Lerp(min,max,_lerp);
     }
 }

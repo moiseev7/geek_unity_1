@@ -7,7 +7,8 @@ public class MathfRepeat : MonoBehaviour
     
     private void Update()
     {
-        Instantiate(_prototype, new Vector3(Time.time, Mathf.Repeat(Time.time, 3.0f), 0),Quaternion.identity);
-        Debug.Log($"{Mathf.Repeat(Time.time, 3.0f)} - {Time.time%3.0f}");    
+        var position = new Vector3(Time.time, Mathf.Repeat(-Time.time, 3.0f), 0);
+        Instantiate(_prototype, position,Quaternion.identity);
+        Debug.Log($"{Mathf.Repeat(Time.time, -10)} - {Time.time%3.0f}");    
     }
 }

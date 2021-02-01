@@ -52,10 +52,14 @@ public class PhysicsRaycast : MonoBehaviour
         {
             OnFoundPlayer.Invoke();
             Debug.Log("Found player");
-            return;
+            
         }
-        OnLostPlayer.Invoke();
-        Debug.Log("LostPlayer player");
+        else
+        {
+            OnLostPlayer.Invoke();
+            Debug.Log("LostPlayer player");    
+        }
+        
     }
 
 
