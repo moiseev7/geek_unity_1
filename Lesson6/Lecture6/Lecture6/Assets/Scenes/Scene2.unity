@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 88868217}
   - component: {fileID: 88868218}
   m_Layer: 0
-  m_Name: SimpleAnimation
+  m_Name: Animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 88868216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02baacca47a564045b2153d9b98423c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 55e157a2dc564d338d4b6c1b50ba202d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1133167203}
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 170548750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e1f1ad69e67991459cbd615f6cbc30c, type: 3}
+  m_Script: {fileID: 11500000, guid: 95cbfea0ac404a339e53e0db1e7a3926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1133167203}
@@ -382,7 +382,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -474,7 +474,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -552,13 +552,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.1684968, y: -0, z: -0, w: 0.9857023}
+  m_LocalPosition: {x: 0, y: 5.96, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1133167204}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 19.401001, y: 0, z: 0}
 --- !u!1 &1133167202
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 1133167206}
   - component: {fileID: 1133167207}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Palayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -608,8 +608,9 @@ Transform:
   m_Children:
   - {fileID: 2102018825}
   - {fileID: 1397059377}
+  - {fileID: 963194228}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1133167205
 BoxCollider:
@@ -634,7 +635,7 @@ Animator:
   m_GameObject: {fileID: 1133167202}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1e3b60a0071c12441a60b499ea7734c5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 62846769e8107604f98da6fe663fb2fa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
